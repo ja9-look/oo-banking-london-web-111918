@@ -13,8 +13,8 @@ class BankAccount
     @balance += amount.to_i
   end
   
-  def deposit
-    @deposit
+  def display_balance
+    @balance
   end
 
 end
