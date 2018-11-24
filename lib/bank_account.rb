@@ -13,6 +13,10 @@ class BankAccount
     @balance += amount.to_i
   end
   
+  def display_balance
+    return "Your balance is $#{@balance}."
+  end
+  
   def valid?
     if self.balance > 0 && self.status == "open"
       return true 
