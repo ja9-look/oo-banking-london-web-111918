@@ -13,6 +13,14 @@ class BankAccount
     @balance += amount.to_i
   end
   
+  def valid?
+    if balance < 0 && status == open
+      return true 
+    else
+      return false
+    end
+  end
+  
   def close_account
     self.status = "closed"
   end
