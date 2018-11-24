@@ -13,6 +13,8 @@ class BankAccount
     @balance += amount.to_i
   end
   
-  
+  def close_account
+    self.status = "closed"
+  end
 
 end
