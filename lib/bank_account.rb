@@ -13,8 +13,8 @@ class BankAccount
     @balance += amount.to_i
   end
   
-  def display_balance
-   self.@balance
+  def self.display_balance
+   self.balance
   end
 
 end
